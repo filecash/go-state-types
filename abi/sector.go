@@ -84,7 +84,6 @@ const (
 	RegisteredSealProof_StackedDrg64GiBV1_1  = RegisteredSealProof(11)
 	RegisteredSealProof_StackedDrg4GiBV1_1   = RegisteredSealProof(12)
 	RegisteredSealProof_StackedDrg16GiBV1_1  = RegisteredSealProof(13)
-
 )
 
 type RegisteredPoStProof int64
@@ -104,7 +103,6 @@ const (
 	RegisteredPoStProof_StackedDrgWinning4GiBV1   = RegisteredPoStProof(11)
 	RegisteredPoStProof_StackedDrgWindow16GiBV1   = RegisteredPoStProof(12)
 	RegisteredPoStProof_StackedDrgWinning16GiBV1  = RegisteredPoStProof(13)
-
 )
 
 // Metadata about a seal proof type.
@@ -157,6 +155,16 @@ var SealProofInfos = map[RegisteredSealProof]*SealProofInfo{
 		WinningPoStProof: RegisteredPoStProof_StackedDrgWinning64GiBV1,
 		WindowPoStProof:  RegisteredPoStProof_StackedDrgWindow64GiBV1,
 	},
+	RegisteredSealProof_StackedDrg4GiBV1: {
+		SectorSize:       4 << 30,
+		WinningPoStProof: RegisteredPoStProof_StackedDrgWinning4GiBV1,
+		WindowPoStProof:  RegisteredPoStProof_StackedDrgWindow4GiBV1,
+	},
+	RegisteredSealProof_StackedDrg16GiBV1: {
+		SectorSize:       16 << 30,
+		WinningPoStProof: RegisteredPoStProof_StackedDrgWinning16GiBV1,
+		WindowPoStProof:  RegisteredPoStProof_StackedDrgWindow16GiBV1,
+	},
 
 	RegisteredSealProof_StackedDrg2KiBV1_1: {
 		ProofSize:        192,
@@ -188,15 +196,15 @@ var SealProofInfos = map[RegisteredSealProof]*SealProofInfo{
 		WinningPoStProof: RegisteredPoStProof_StackedDrgWinning64GiBV1,
 		WindowPoStProof:  RegisteredPoStProof_StackedDrgWindow64GiBV1,
 	},
-	RegisteredSealProof_StackedDrg4GiBV1: {
-		SectorSize:                 4 << 30,
-		WinningPoStProof:           RegisteredPoStProof_StackedDrgWinning4GiBV1,
-		WindowPoStProof:            RegisteredPoStProof_StackedDrgWindow4GiBV1,
+	RegisteredSealProof_StackedDrg4GiBV1_1: {
+		SectorSize:       4 << 30,
+		WinningPoStProof: RegisteredPoStProof_StackedDrgWinning4GiBV1,
+		WindowPoStProof:  RegisteredPoStProof_StackedDrgWindow4GiBV1,
 	},
-	RegisteredSealProof_StackedDrg16GiBV1: {
-		SectorSize:                 16 << 30,
-		WinningPoStProof:           RegisteredPoStProof_StackedDrgWinning16GiBV1,
-		WindowPoStProof:            RegisteredPoStProof_StackedDrgWindow16GiBV1,
+	RegisteredSealProof_StackedDrg16GiBV1_1: {
+		SectorSize:       16 << 30,
+		WinningPoStProof: RegisteredPoStProof_StackedDrgWinning16GiBV1,
+		WindowPoStProof:  RegisteredPoStProof_StackedDrgWindow16GiBV1,
 	},
 }
 
