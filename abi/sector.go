@@ -118,6 +118,8 @@ const (
 	ss512MiB = 512 << 20
 	ss32GiB  = 32 << 30
 	ss64GiB  = 64 << 30
+	ss4GiB   = 4 << 30
+	ss16GiB  = 16 << 30
 )
 
 var SealProofInfos = map[RegisteredSealProof]*SealProofInfo{
@@ -243,6 +245,12 @@ var PoStProofInfos = map[RegisteredPoStProof]*PoStProofInfo{
 	RegisteredPoStProof_StackedDrgWinning64GiBV1: {
 		SectorSize: ss64GiB,
 	},
+	RegisteredPoStProof_StackedDrgWinning4GiBV1: {
+		SectorSize: ss4GiB,
+	},
+	RegisteredPoStProof_StackedDrgWinning16GiBV1: {
+		SectorSize: ss16GiB,
+	},
 	RegisteredPoStProof_StackedDrgWindow2KiBV1: {
 		SectorSize: ss2KiB,
 	},
@@ -257,6 +265,13 @@ var PoStProofInfos = map[RegisteredPoStProof]*PoStProofInfo{
 	},
 	RegisteredPoStProof_StackedDrgWindow64GiBV1: {
 		SectorSize: ss64GiB,
+	},
+
+	RegisteredPoStProof_StackedDrgWindow4GiBV1: {
+		SectorSize: ss4GiB,
+	},
+	RegisteredPoStProof_StackedDrgWindow16GiBV1: {
+		SectorSize: ss16GiB,
 	},
 }
 
