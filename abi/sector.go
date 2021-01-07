@@ -158,12 +158,12 @@ var SealProofInfos = map[RegisteredSealProof]*SealProofInfo{
 		WindowPoStProof:  RegisteredPoStProof_StackedDrgWindow64GiBV1,
 	},
 	RegisteredSealProof_StackedDrg4GiBV1: {
-		SectorSize:       4 << 30,
+		SectorSize:       ss4GiB,
 		WinningPoStProof: RegisteredPoStProof_StackedDrgWinning4GiBV1,
 		WindowPoStProof:  RegisteredPoStProof_StackedDrgWindow4GiBV1,
 	},
 	RegisteredSealProof_StackedDrg16GiBV1: {
-		SectorSize:       16 << 30,
+		SectorSize:       ss16GiB,
 		WinningPoStProof: RegisteredPoStProof_StackedDrgWinning16GiBV1,
 		WindowPoStProof:  RegisteredPoStProof_StackedDrgWindow16GiBV1,
 	},
@@ -199,12 +199,12 @@ var SealProofInfos = map[RegisteredSealProof]*SealProofInfo{
 		WindowPoStProof:  RegisteredPoStProof_StackedDrgWindow64GiBV1,
 	},
 	RegisteredSealProof_StackedDrg4GiBV1_1: {
-		SectorSize:       4 << 30,
+		SectorSize:       ss4GiB,
 		WinningPoStProof: RegisteredPoStProof_StackedDrgWinning4GiBV1,
 		WindowPoStProof:  RegisteredPoStProof_StackedDrgWindow4GiBV1,
 	},
 	RegisteredSealProof_StackedDrg16GiBV1_1: {
-		SectorSize:       16 << 30,
+		SectorSize:       ss16GiB,
 		WinningPoStProof: RegisteredPoStProof_StackedDrgWinning16GiBV1,
 		WindowPoStProof:  RegisteredPoStProof_StackedDrgWindow16GiBV1,
 	},
