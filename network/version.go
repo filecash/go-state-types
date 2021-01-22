@@ -12,6 +12,8 @@ const (
 	Version2                 // specs-actors v0.9.?
 	Version3                 // Coming soon
 	Version4                 // Who knows?
+	Version5
+	Version6
 
 	VersionMax = Version(math.MaxUint32)
 )
