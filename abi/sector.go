@@ -302,7 +302,6 @@ var PoStProofInfos = map[RegisteredPoStProof]*PoStProofInfo{
 		SectorSize: ss64GiB,
 		ProofSize:  192,
 	},
-
 	RegisteredPoStProof_StackedDrgWindow4GiBV1: {
 		SectorSize: ss4GiB,
 	},
