@@ -266,7 +266,6 @@ var PoStProofInfos = map[RegisteredPoStProof]*PoStProofInfo{
 	RegisteredPoStProof_StackedDrgWindow64GiBV1: {
 		SectorSize: ss64GiB,
 	},
-
 	RegisteredPoStProof_StackedDrgWindow4GiBV1: {
 		SectorSize: ss4GiB,
 	},
